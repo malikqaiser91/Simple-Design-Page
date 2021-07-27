@@ -1,0 +1,234 @@
+:root {
+  --primary-color: #0073de;
+}
+.container h1 {
+  font-size: 2.2rem;
+  line-height: 31px;
+  color: var(--primary-color);
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 1.4rem;
+}
+.hr {
+  border: 1px solid #d7d7d7;
+  margin-top: 2rem;
+}
+/* Min Container */
+.min-container {
+  max-width: 800px;
+  margin-top: 2rem;
+}
+.product-search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.product-search h2 {
+  color: #545454;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+#input-product {
+  width: 50%;
+}
+#input {
+  border-right: none;
+}
+#input:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #ced4da;
+}
+#input,
+#btn {
+  padding: 10px 20px;
+}
+#btn {
+  border: 1px solid #c3d4da;
+  background-color: #eee;
+  border-left: none;
+}
+#btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+#img:hover {
+  width: 90%;
+}
+.product {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 12px;
+  grid-row-gap: 10px;
+  margin-top: 2rem;
+  overflow: hidden;
+}
+.product-display {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 115, 222, 0.85) 85.95%
+  );
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 200px;
+  width: 100%;
+  text-align: center;
+}
+.product-display h4 {
+  color: #fff;
+  font-size: 1.3rem;
+}
+.product-display h4:hover {
+  color: #ccc;
+  cursor: pointer;
+}
+.right-arrow {
+  display: inline-block;
+  margin-left: 15px;
+}
+#arrow:hover {
+  cursor: pointer;
+  width: 90%;
+}
+/* Product Display */
+.item-1 {
+  background: url("./img/restaurant_img.png");
+  position: relative;
+}
+#tick {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#tick img {
+  display: inline-block;
+  width: 32px;
+  margin-top: 0px;
+  margin-right: -6px;
+}
+#tick:hover {
+  cursor: pointer;
+  width: 35px;
+  margin-right: -8px;
+}
+.item-2 {
+  background: url("./img/shopping_img.png");
+}
+.item-3 {
+  background: url("./img/on_demand_delivery_img.png");
+}
+.item-4 {
+  background: url("./img/loyalty_img.png");
+}
+.item-5 {
+  background: url("./img/video_on_demand_img.png");
+}
+.item-6 {
+  background: url("./img/payment_collection_img.png");
+}
+.item-7 {
+  background: url("./img/video_on_demand_img.png");
+}
+.item-8 {
+  background: url("./img/blog_img.png");
+}
+/* Store */
+.store {
+  margin-top: 3rem;
+}
+.store h4 {
+  color: #11a6e5;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+#store-input {
+  border: 7px;
+  border: 1px solid #e7e5e5;
+  background: #eee;
+  padding: 10px 20px;
+  padding-right: 0;
+  font-size: 1rem;
+}
+#store-input:focus {
+  outline: none !important;
+  border: 1px solid #e7e5e5 !important;
+  box-shadow: none !important;
+}
+.store button {
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  padding: 10px 30px;
+  background-color: #11a6e5;
+}
+/* Utilities */
+#comming-soon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  margin-left: 80px;
+  margin-top: 8px;
+  height: 30px;
+  width: 80px;
+  background-color: #fff;
+}
+#comming-soon p {
+  color: #e74c3c;
+  font-size: 0.6rem;
+  font-weight: bold;
+  margin-top: 8px;
+  margin-left: 5px;
+}
+#bg {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+/* Media Querires for Mobile Screen */
+@media (max-width: 600px) {
+  .product-search {
+    display: block;
+  }
+  .product-search h2 {
+    margin-bottom: 2rem;
+  }
+  .product-search #input-product {
+    width: 100%;
+  }
+  .product {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 12px;
+    grid-row-gap: 14px;
+    margin-top: 2rem;
+    overflow: hidden;
+  }
+  #comming-soon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    margin-left: 85px;
+    margin-top: 8px;
+    height: 30px;
+    width: 50px;
+    background-color: #fff;
+  }
+  #comming-soon p {
+    color: #e74c3c;
+    font-size: 0.6rem;
+    font-weight: bold;
+    margin-top: 2px;
+    margin-left: 5px;
+  }
+  .product-display {
+    height: 160px;
+  }
+}
